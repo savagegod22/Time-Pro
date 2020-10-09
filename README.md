@@ -5,3 +5,4 @@ Made entirely with SwiftUI.
 
 ## To do:
 * Add an Alarm
+* Add app to Releases
