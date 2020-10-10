@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TimerView",
+        "repositoryURL": "https://github.com/ViktorMaric/TimerView.git",
+        "state": {
+          "branch": null,
+          "revision": "d882af59782c1fd93685203ff79bfbba8a343539",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

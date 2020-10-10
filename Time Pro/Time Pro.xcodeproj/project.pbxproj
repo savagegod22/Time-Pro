@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7917E9B253232F500644CE1 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7917E9A253232F500644CE1 /* Stopwatch.swift */; };
+		E7917EA7253249E600644CE1 /* TimerView in Frameworks */ = {isa = PBXBuildFile; productRef = E7917EA6253249E600644CE1 /* TimerView */; };
 		E7B1DD7025311C2600E3D6B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B1DD6F25311C2600E3D6B1 /* AppDelegate.swift */; };
 		E7B1DD7225311C2600E3D6B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B1DD7125311C2600E3D6B1 /* ContentView.swift */; };
 		E7B1DD7425311C2A00E3D6B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B1DD7325311C2A00E3D6B1 /* Assets.xcassets */; };
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E7917E9A253232F500644CE1 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		E7B1DD6C25311C2600E3D6B1 /* Time Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B1DD6F25311C2600E3D6B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7B1DD7125311C2600E3D6B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7917EA7253249E600644CE1 /* TimerView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +108,7 @@
 			children = (
 				E7B1DD6F25311C2600E3D6B1 /* AppDelegate.swift */,
 				E7B1DD7125311C2600E3D6B1 /* ContentView.swift */,
+				E7917E9A253232F500644CE1 /* Stopwatch.swift */,
 				E7D7E89325312F6C008DACE5 /* TimeView.swift */,
 				E7B1DDAA25311D1A00E3D6B1 /* Time.swift */,
 				E7B1DD7325311C2A00E3D6B1 /* Assets.xcassets */,
@@ -157,6 +162,9 @@
 			dependencies = (
 			);
 			name = "Time Pro";
+			packageProductDependencies = (
+				E7917EA6253249E600644CE1 /* TimerView */,
+			);
 			productName = "Time Pro";
 			productReference = E7B1DD6C25311C2600E3D6B1 /* Time Pro.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +236,9 @@
 				Base,
 			);
 			mainGroup = E7B1DD6325311C2600E3D6B1;
+			packageReferences = (
+				E7917EA5253249E600644CE1 /* XCRemoteSwiftPackageReference "TimerView" */,
+			);
 			productRefGroup = E7B1DD6D25311C2600E3D6B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -271,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7917E9B253232F500644CE1 /* Stopwatch.swift in Sources */,
 				E7B1DDAC25311D1A00E3D6B1 /* Time.swift in Sources */,
 				E7B1DD7225311C2600E3D6B1 /* ContentView.swift in Sources */,
 				E7B1DD7025311C2600E3D6B1 /* AppDelegate.swift in Sources */,
@@ -454,7 +466,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Aryan-Apps.Time-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -479,7 +491,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Aryan-Apps.Time-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -610,6 +622,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7917EA5253249E600644CE1 /* XCRemoteSwiftPackageReference "TimerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ViktorMaric/TimerView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7917EA6253249E600644CE1 /* TimerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7917EA5253249E600644CE1 /* XCRemoteSwiftPackageReference "TimerView" */;
+			productName = TimerView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7B1DD6425311C2600E3D6B1 /* Project object */;
 }

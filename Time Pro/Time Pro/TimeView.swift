@@ -31,7 +31,7 @@ struct Home: View {
         VStack {
             HStack {
                 Text(Locale.current.localizedString(forRegionCode: Locale.current.regionCode!) ?? "")
-                    .font(.largeTitle)
+                    .font(.system(size: 35, design: .rounded))
                     .fontWeight(.heavy)
 //                    .padding(.top, 35)
                 
@@ -42,7 +42,7 @@ struct Home: View {
             Spacer()
             
             Text(getTime())
-                .font(.system(size: 45))
+                .font(.system(size: 45, design: .rounded))
                 .fontWeight(.heavy)
                 .padding(.top, 10).animation(nil)
             
@@ -54,7 +54,7 @@ struct Home: View {
                 
                 // Seconds And Min dots...
                 ForEach(0..<60, id: \.self){ i in
-                    Rectangle()
+                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                         .fill(Color.primary)
                         .frame(width: 2, height: (i % 5) == 0 ? 15 : 5)// 60/12 = 5
                         .offset(y: (500 - 110) / 2)
@@ -62,21 +62,21 @@ struct Home: View {
                 }
                 
                 //Minutes
-                Rectangle()
+                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                     .fill(Color.primary)
                     .frame(width: 4, height: (500 - 150) / 2)
                     .offset(y: -(500 - 200) / 4)
                     .rotationEffect(.init(degrees: Double(currentTime.min) * 6))
                 
                 //Hours
-                Rectangle()
+                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                     .fill(Color.primary)
                     .frame(width: 4.5, height: (500 - 240) / 2)
                     .offset(y: -(500 - 240) / 4)
                     .rotationEffect(.init(degrees: Double(currentTime.hour + currentTime.min / 60) * 30))
                 
                 //Seconds
-                Rectangle()
+                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                     .fill(Color.red)
                     .frame(width: 2, height: (500 - 180) / 2)
                     .offset(y: -(500 - 180) / 4)

@@ -25,7 +25,7 @@ struct ContentView: View {
                     tabIconName: "icons.general.list",
                     view: AnyView(
                         HStack {
-                            Text("Work-In-Progress")
+                            StopwatchView().padding().animation(.spring(response: 0.2, dampingFraction: 0.2)).frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         }
                     )
                 ),
