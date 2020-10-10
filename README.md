@@ -17,4 +17,4 @@ When you try opening it, it will say “Time Pro” can’t be opened because Ap
 * Add an Alarm
 * ✓ Add app to Releases ✓
 
-Thanks to OrangeFlavoredDerek's Analog-Clock-SwiftUI-2.0- for some code
+Thanks to OrangeFlavoredDerek's Analog-Clock-SwiftUI-2.0- for Clock code
