@@ -1,7 +1,7 @@
 # Time Pro
 ### A macOS app where you can keep track of time with a beautiful clock and design. Made entirely with `SwiftUI`.
 <img src="https://github.com/savagegod22/Time-Pro/blob/main/Images-For-Time-Pro/Time_Pro_macOS_App_Icon.png" width="256">
-<img src="https://github.com/savagegod22/Time-Pro/blob/main/Images-For-Time-Pro/Clock.png" width="512">
+<img src="https://github.com/savagegod22/Time-Pro/blob/main/Images-For-Time-Pro/Clock.png" width="512"> 
 
 ## Features:
 * A beautiful Analog Clock
@@ -20,9 +20,9 @@ To fix that, go to System Preferences, Privacy, and then General. Next, press op
 
 
 ## To do:
-* Add Timer
-* Add Stopwatch
-* Add an Alarm
-* ✓ Add app to Releases ✓
+- [] Add Timer
+- [] Add Stopwatch
+- [] Add an Alarm
+- [x] Add app to Releases
 
 Thanks to OrangeFlavoredDerek's Analog-Clock-SwiftUI-2.0- for Clock code
