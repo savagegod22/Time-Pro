@@ -6,28 +6,24 @@
 //
 
 import SwiftUI
-//#if !os(macOS)
-//    import UserNotificationsUI
-//#endif
 
-struct TimeView: View {
+struct ClockView: View {
     @State var isDark: Bool = false
     @State var is12h: Bool = true
-    
     var body: some View {
         Home(is12h: $is12h, isDark: $isDark)
     }
 }
 
-struct TimeView_Previews: PreviewProvider {
+struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeView()
+        ContentView()
     }
 }
 
 struct Home: View {
     @State var currentTime = Time(sec: 0, min: 0, hour: 0)
-    @State var receiver = Timer.publish(every: 1, on: .current, in: .default).autoconnect()
+    @State var receiver = Timer.publish(every: 0.1, on: .current, in: .default).autoconnect()
     @Binding var is12h: Bool
     @Binding var isDark: Bool
         
@@ -40,18 +36,6 @@ struct Home: View {
 //                    .padding(.top, 35)
                 
                 Spacer()
-                
-//                Button(action: {
-//                    isDark.toggle()
-//                    vibrationFeedback()
-//                }, label: {
-//                    Image(systemName: isDark ? "sun.min.fill" : "moon.fill")
-//                        .font(.system(size: 22))
-//                        .foregroundColor(isDark ? .black : .white)
-//                        .padding()
-//                        .background(Color.primary)
-//                        .clipShape(Circle())
-//                })
             }
             .padding()
             
@@ -60,7 +44,7 @@ struct Home: View {
             Text(getTime())
                 .font(.system(size: 45))
                 .fontWeight(.heavy)
-                .padding(.top, 10)
+                .padding(.top, 10).animation(nil)
             
             Spacer()
             
@@ -115,7 +99,6 @@ struct Home: View {
                         .modifier(FormatFomt())
                 }
             })
-            .padding(.top)
             
             Spacer()
         }
@@ -140,20 +123,15 @@ struct Home: View {
             withAnimation(Animation.linear(duration: 0.01)){
                 currentTime = Time(sec: sec, min: min, hour: hour)
             }
-        }
+        }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
-    
-//    func vibrationFeedback() {
-//        let generator = UINotificationFeedbackGenerator()
-//            generator.notificationOccurred(.success)
-//    }
     
     func getTime() -> String {
         let format = DateFormatter()
         if is12h {
-            format.dateFormat = "hh:mm a"
+            format.dateFormat = "hh:mm:ss a"
         } else {
-            format.dateFormat = "HH:mm"
+            format.dateFormat = "HH:mm:ss"
         }
 
 //        format.dateFormat = "HH:mm"

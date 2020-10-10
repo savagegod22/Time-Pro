@@ -14,8 +14,8 @@
 		E7B1DD7A25311C2A00E3D6B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B1DD7825311C2A00E3D6B1 /* Main.storyboard */; };
 		E7B1DD8625311C2A00E3D6B1 /* Time_ProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B1DD8525311C2A00E3D6B1 /* Time_ProTests.swift */; };
 		E7B1DD9125311C2A00E3D6B1 /* Time_ProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B1DD9025311C2A00E3D6B1 /* Time_ProUITests.swift */; };
-		E7B1DDAB25311D1A00E3D6B1 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B1DDA925311D1A00E3D6B1 /* TimeView.swift */; };
 		E7B1DDAC25311D1A00E3D6B1 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B1DDAA25311D1A00E3D6B1 /* Time.swift */; };
+		E7D7E89425312F6C008DACE5 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7E89325312F6C008DACE5 /* TimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,8 @@
 		E7B1DD8C25311C2A00E3D6B1 /* Time ProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Time ProUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B1DD9025311C2A00E3D6B1 /* Time_ProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_ProUITests.swift; sourceTree = "<group>"; };
 		E7B1DD9225311C2A00E3D6B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7B1DDA925311D1A00E3D6B1 /* TimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		E7B1DDAA25311D1A00E3D6B1 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		E7D7E89325312F6C008DACE5 /* TimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 			children = (
 				E7B1DD6F25311C2600E3D6B1 /* AppDelegate.swift */,
 				E7B1DD7125311C2600E3D6B1 /* ContentView.swift */,
-				E7B1DDA925311D1A00E3D6B1 /* TimeView.swift */,
+				E7D7E89325312F6C008DACE5 /* TimeView.swift */,
 				E7B1DDAA25311D1A00E3D6B1 /* Time.swift */,
 				E7B1DD7325311C2A00E3D6B1 /* Assets.xcassets */,
 				E7B1DD7825311C2A00E3D6B1 /* Main.storyboard */,
@@ -273,8 +273,8 @@
 			files = (
 				E7B1DDAC25311D1A00E3D6B1 /* Time.swift in Sources */,
 				E7B1DD7225311C2600E3D6B1 /* ContentView.swift in Sources */,
-				E7B1DDAB25311D1A00E3D6B1 /* TimeView.swift in Sources */,
 				E7B1DD7025311C2600E3D6B1 /* AppDelegate.swift in Sources */,
+				E7D7E89425312F6C008DACE5 /* TimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +454,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Aryan-Apps.Time-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -478,6 +479,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Aryan-Apps.Time-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
