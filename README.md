@@ -20,9 +20,9 @@ To fix that, go to System Preferences, Privacy, and then General. Next, press op
 
 
 ## To do:
-- [] Add Timer
-- [] Add Stopwatch
-- [] Add an Alarm
+- [ ] Add Timer
+- [ ] Add Stopwatch
+- [ ] Add an Alarm
 - [x] Add app to Releases
 
 Thanks to OrangeFlavoredDerek's Analog-Clock-SwiftUI-2.0- for Clock code
