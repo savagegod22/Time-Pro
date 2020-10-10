@@ -11,7 +11,7 @@ When you try opening it, it will say “Time Pro” can’t be opened because Ap
 
 ![Pop-up](https://github.com/savagegod22/Time-Pro/blob/main/Images-For-Time-Pro/Pop-up.png)
 
-To fix that, go to System Preferences, Privacy, and then General. Next, choose open anyway in the bottom. This app does not contain a virus. Enjoy!
+To fix that, go to System Preferences, Privacy, and then General. Next, press open anyway in the bottom. This app does not contain a virus. Enjoy!
 
 ![System Preferences](https://github.com/savagegod22/Time-Pro/blob/main/Images-For-Time-Pro/Settings.png)
 
