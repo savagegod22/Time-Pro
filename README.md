@@ -21,8 +21,10 @@ To fix that, go to System Preferences, Privacy, and then General. Next, press op
 
 ## To do:
 - [ ] Add Timer
-- [ ] Add Stopwatch
 - [ ] Add an Alarm
+- [x] Add Stopwatch
 - [x] Add app to Releases
 
-Thanks to OrangeFlavoredDerek's Analog-Clock-SwiftUI-2.0- for Clock code
+Thanks to OrangeFlavoredDerek's [Analog-Clock-SwiftUI-2.0-](https://github.com/OrangeFlavoredDerek/Analog-Clock-SwiftUI-2.0-) for some of the Clock code.
+
+Thanks to Shubham0812's [Timer_SwiftUI](https://github.com/OrangeFlavoredDerek/Analog-Clock-SwiftUI-2.0-) for some of the Stopwatch code.
