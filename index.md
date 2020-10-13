@@ -4,8 +4,7 @@ This is an app that displays time and has a stopwatch. Currently under developme
 
 Made entirely with `SwiftUI`.
 
-<img src="Images-For-Time-Pro/Time_Pro_macOS_App_Icon.png)
-" width="256">
+<img src="Images-For-Time-Pro/Time_Pro_macOS_App_Icon.png" width="256">
 <img src="Images-For-Time-Pro/Clock.png" width="512"> 
 
 ## Features:
