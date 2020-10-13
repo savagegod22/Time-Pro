@@ -5,11 +5,14 @@
 
 ## Features:
 * A beautiful Analog Clock
+* A nice Stopwatch
 
 Install
 -
-Get Time Pro for macOS [here](https://github.com/savagegod22/Time-Pro/releases). Just unzip the file and drag it into your Applications folder.
-When you try opening it, it will say “Time Pro” can’t be opened because Apple cannot check it for malicious software, but you can ignore that, because this app doesn't have a virus.
+Get Time Pro for macOS [here](https://github.com/savagegod22/Time-Pro/releases). Just open the DMG file and drag the app to the icon of the Applications folder.
+<img src="https://github.com/savagegod22/Time-Pro/blob/main/Images-For-Time-Pro/DMG.png" width="512">
+
+When you try opening it, it will say `“Time Pro can’t be opened because Apple cannot check it for malicious software,"` but you can ignore that, because this app doesn't have a virus.
 
 ![Pop-up](https://github.com/savagegod22/Time-Pro/blob/main/Images-For-Time-Pro/Pop-up.png)
 
