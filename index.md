@@ -13,7 +13,7 @@ Made entirely with `SwiftUI`.
 
 Install
 -
-Get Time Pro for macOS [here](https://github.com/savagegod22/Time-Pro/releases). Just open the DMG file and drag the app to the icon of the Applications folder.
+Get Time Pro for macOS [here](https://github.com/savagegod22/Time-Pro/releases/latest/download/Time-Pro.dmg). Just open the DMG file and drag the app to the icon of the Applications folder.
 <img src="Images-For-Time-Pro/DMG.png" width="512">
 
 When you try opening it, it will say `“Time Pro can’t be opened because Apple cannot check it for malicious software,"` but you can ignore that, because this app doesn't have a virus.
